@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import TreeMenu from './components/treeMenu/TreeMenu';
+import HomePage from './screens/Homepage/HomePage';
+
 
 function App() {
   return (
     <div>
-        <TreeMenu />
+        <HomePage />
     </div>
   );
 }

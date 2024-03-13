@@ -25,7 +25,7 @@ const treeSample = [
                 title: 'Parent B',
                 children: [
                     {title: 'Child B1', children: []},
-                    {title: 'child B2', children: []},
+                    {title: 'Child B2', children: []},
                     {title: 'Child Parent B3', children: []}
                 ]
             }
@@ -34,15 +34,14 @@ const treeSample = [
     }
 ]
 
-const TreeMenu = () => {
-
+const TreeMenu = ({ onItemClick }) => {
     return (
         <div>
             {treeSample.map((node, index) => (
-                <TreeNode key={index} node={node}/>
+                <TreeNode key={index} node={node} onItemClick={onItemClick} />
             ))}
         </div>
-    )
-}
+    );
+};
 
 export default TreeMenu;
