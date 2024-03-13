@@ -17,7 +17,7 @@ const TreeNode = ({ node, onItemClick }) => {
             setShowModal(true);
         }
 
-            onItemClick(node.title);
+        onItemClick(node.title);
 
     };
 

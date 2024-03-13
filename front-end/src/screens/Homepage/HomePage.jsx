@@ -4,6 +4,7 @@ import Body from '../../components/Body'
 import './HomePage.css'
 import Header from '../../components/Header';
 import Footer from '../../components/Footer'
+import Category from '../../components/Category';
 
 const HomePage = () => {
     const [content, setContent] = useState('');
@@ -22,6 +23,7 @@ const HomePage = () => {
                 <div className='divider'></div>
                 <div className='content-container'>
                     <Body content={content} />
+                    <Category />
                 </div>
             </div>
             <Footer />
