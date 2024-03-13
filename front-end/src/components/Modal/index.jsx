@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Modal.css'
 
 const Modal = ({content, onClose}) => {
+
+    const modalRef = useRef();
+
+    const closeModal = (e) => {
+        if (modalRef.current === e.target){
+            onClose();
+        }
+    }
     return (
-        <div className='modal-container'>
+        <div ref={modalRef} onClick={closeModal} className='modal-container'>
             <div className='modal-content'>
                 <span className='close-button' onClick={onClose}>x</span>
                 <p>{content}</p>
