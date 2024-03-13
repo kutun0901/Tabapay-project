@@ -1,7 +1,14 @@
 .homePage-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 15px;
+    flex-direction: column;
+    padding: 5px;
+    height: 100vh;
+}
+
+.menu-and-content {
+    display: flex;
+    flex: 1;
+    padding: 10px;
 }
 
 .menu-container {
