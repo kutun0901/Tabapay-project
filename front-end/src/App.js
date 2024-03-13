@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import TreeMenu from './components/treeMenu/TreeMenu';
+import TreeMenu from './components/TreeMenu';
+
 
 function App() {
   return (

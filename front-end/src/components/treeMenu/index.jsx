@@ -25,7 +25,7 @@ const treeSample = [
                 title: 'Parent B',
                 children: [
                     {title: 'Child B1', children: []},
-                    {title: 'child B2', children: []},
+                    {title: 'Child B2', children: []},
                     {title: 'Child Parent B3', children: []}
                 ]
             }
