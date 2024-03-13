@@ -34,15 +34,14 @@ const treeSample = [
     }
 ]
 
-const TreeMenu = () => {
-
+const TreeMenu = ({ onItemClick }) => {
     return (
         <div>
             {treeSample.map((node, index) => (
-                <TreeNode key={index} node={node}/>
+                <TreeNode key={index} node={node} onItemClick={onItemClick} />
             ))}
         </div>
-    )
-}
+    );
+};
 
 export default TreeMenu;

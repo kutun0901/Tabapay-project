@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './treeNode.css';
 import Modal from '../Modal';
 
-const TreeNode = ({ node }) => {
+const TreeNode = ({ node, onItemClick }) => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [nodeContent, setNodeContent] = useState('');
@@ -16,6 +16,9 @@ const TreeNode = ({ node }) => {
             setNodeContent(node.title);
             setShowModal(true);
         }
+
+            onItemClick(node.title);
+
     };
 
     return (
@@ -33,7 +36,7 @@ const TreeNode = ({ node }) => {
             {isExpanded && (
                 <div className="tree-nodes">
                     {node.children.map((child, index) => (
-                        <TreeNode key={index} node={child} />
+                        <TreeNode key={index} node={child} onItemClick={onItemClick} />
                     ))}
                 </div>
             )}
@@ -41,7 +44,6 @@ const TreeNode = ({ node }) => {
                 <Modal content={nodeContent} onClose={() => setShowModal(false)} />
             )}
         </>
-
     );
 };
 
