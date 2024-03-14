@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './treeNode.css';
-import Modal from '../Modal';
+import Modal from '../../Part2/Modal';
 
 const TreeNode = ({ node, onItemClick }) => {
     const [isExpanded, setIsExpanded] = useState(false);
