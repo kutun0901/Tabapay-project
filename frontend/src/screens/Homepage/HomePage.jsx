@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import TreeMenu from '../../components/TreeMenu'
-import Body from '../../components/Body'
+import Body from '../../components/Part3/Body'
 import './HomePage.css'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer'
-import Category from '../../components/Category';
+import Header from '../../components/Part4/Header';
+import Footer from '../../components/Part4/Footer'
+import Category from '../../components/Part5/Category';
+import TreeMenu from '../../components/Part1/TreeMenu'
 
 const HomePage = () => {
     const [content, setContent] = useState('');
