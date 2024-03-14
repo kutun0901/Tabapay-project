@@ -7,6 +7,7 @@ const TreeNode = ({ node, onItemClick }) => {
     const [showModal, setShowModal] = useState(false);
     const [nodeContent, setNodeContent] = useState('');
 
+    // Part 1
     const handleToggle = () => {
         setIsExpanded(!isExpanded);
     };

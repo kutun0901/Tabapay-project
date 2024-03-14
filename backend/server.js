@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 5000;
 
+
+// Part 6 Connecting the Front End (UI) with the Back End using Node.js and Express
 const treeSample = [
     {
         title: 'Root',
