@@ -17,13 +17,13 @@ const TreeNode = ({ node, onItemClick }) => {
             setShowModal(true);
         }
 
-            onItemClick(node.title);
+        onItemClick(node.title);
 
     };
 
     return (
         <>
-            <div className="root" onClick={handleClick}>
+            <div className="tree-nodes" onClick={handleClick}>
                 {node.children.length > 0 ? (
                     <span onClick={handleToggle}>
                         {isExpanded ? '▼ ' : '► '}
@@ -34,7 +34,7 @@ const TreeNode = ({ node, onItemClick }) => {
                 {node.title}
             </div>
             {isExpanded && (
-                <div className="tree-nodes">
+                <div className="tree-children">
                     {node.children.map((child, index) => (
                         <TreeNode key={index} node={child} onItemClick={onItemClick} />
                     ))}

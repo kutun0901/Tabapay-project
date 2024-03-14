@@ -1,0 +1,21 @@
+.footer-container {
+    background-color: #656161;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.contact-info a {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.contact-info a:hover {
+    color: #ccc;
+}
