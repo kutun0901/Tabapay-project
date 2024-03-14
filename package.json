@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install && node server.js",
-    "start": "cd frontend && npm install && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "build:backend": "cd backend && npm install",
+      "start:backend": "cd backend && node server.js",
+      "build:frontend": "cd frontend && npm install && npm run build",
+      "start:frontend": "cd frontend && npm start",
+      "build": "npm run build:frontend && npm run build:backend",
+      "start": "npm run start:backend"
   },
   "keywords": [],
   "author": "",
