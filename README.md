@@ -6,7 +6,7 @@ This project is a web application developed for the Tabapay assessment. It consi
 
 Before you begin, ensure you have met the following requirements:
 
-- Node.js installed on your local machine
+- Node.js installed on your local machine....
 - Git installed on your local machine
 
 ## Installation
