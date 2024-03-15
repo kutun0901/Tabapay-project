@@ -1,5 +1,6 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const path = require('path');
+const app = express();
 const port = 5000;
 
 
@@ -53,14 +54,18 @@ const Categories = [
 ]
 
 app.get('/api/tree', (req, res) => {
-    res.json(treeSample)
-})
+    res.json(treeSample);
+});
 
 app.get('/api/categories', (req, res) => {
-    res.json(Categories)
-})
+    res.json(Categories);
+});
 
+// Serve the frontend index.html for any other route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'));
+});
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+    console.log(`Server is running on port ${port}`);
+});
