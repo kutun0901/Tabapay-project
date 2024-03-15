@@ -6,7 +6,7 @@
   "scripts": {
     "render-postbuild": "npm run build --prefix frontend",
     "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
-    "start": "node server.js" // Use node to start the backend server
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
