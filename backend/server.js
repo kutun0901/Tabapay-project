@@ -3,6 +3,8 @@ const path = require('path');
 const app = express();
 const port = 5000;
 
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
+
 
 // Part 6 Connecting the Front End (UI) with the Back End using Node.js and Express
 const treeSample = [
